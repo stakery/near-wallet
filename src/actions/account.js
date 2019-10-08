@@ -104,7 +104,7 @@ export const redirectToApp = () => (dispatch, getState) => {
 
 const defaultCodesFor = (prefix) => () => ({ successCode: `${prefix}.success`, errorCode: `${prefix}.error` })
 
-export const { requestCode, setupAccountRecovery, recoverAccount, getAccessKeys, removeAccessKey, checkNewAccount, createNewAccount, checkAccountAvailable, clear, clearCode } = createActions({
+export const { requestCode, setupAccountRecovery, recoverAccount, checkNewAccount, createNewAccount, checkAccountAvailable, clear, clearCode } = createActions({
    REQUEST_CODE: [
       wallet.requestCode.bind(wallet),
       defaultCodesFor('account.requestCode')
@@ -117,8 +117,6 @@ export const { requestCode, setupAccountRecovery, recoverAccount, getAccessKeys,
       wallet.recoverAccount.bind(wallet),
       defaultCodesFor('account.recoverAccount')
    ],
-   GET_ACCESS_KEYS: [wallet.getAccessKeys.bind(wallet), () => ({})],
-   REMOVE_ACCESS_KEY: [wallet.removeAccessKey.bind(wallet), () => ({})],
    CHECK_NEW_ACCOUNT: [
       wallet.checkNewAccount.bind(wallet),
       defaultCodesFor('account.create')
@@ -133,6 +131,12 @@ export const { requestCode, setupAccountRecovery, recoverAccount, getAccessKeys,
    ],
    CLEAR: null,
    CLEAR_CODE: null
+})
+
+export const { getAccessKeys, removeAccessKey, addLedgerAccessKey } = createActions({
+   GET_ACCESS_KEYS: [wallet.getAccessKeys.bind(wallet), () => ({})],
+   REMOVE_ACCESS_KEY: [wallet.removeAccessKey.bind(wallet), () => ({})],
+   ADD_LEDGER_ACCESS_KEY: [wallet.addLedgerAccessKey.bind(wallet), () => ({})],
 })
 
 export const { addAccessKey, clearAlert } = createActions({

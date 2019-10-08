@@ -6955,10 +6955,10 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-near-ledger-js@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/near-ledger-js/-/near-ledger-js-0.0.2.tgz#050b0ae23ec1371eaf8361f3ed4f173cfe6e8524"
-  integrity sha512-lUKCy3M6M4bsXSgngiiO0lDjyxwS/OkYpGjpZtmrpS0jqqy0JpBdjt8IJfZWUc7WtSBMGS/8Hc/73Px8v8KXOA==
+near-ledger-js@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/near-ledger-js/-/near-ledger-js-0.0.3.tgz#dc6033a2a01e5b74cf548b64d69a838cf27b591f"
+  integrity sha512-7shra+hJiXgWDakFddbUFBScpyLkjp4XFLlDn70hOH9DHluBK7/hnU4y8bSBN11/wHgQGpPFQO6hybwBQ4JXMQ==
   dependencies:
     "@ledgerhq/hw-transport-u2f" "^4.70.0"
     "@ledgerhq/logs" "^4.70.0"
