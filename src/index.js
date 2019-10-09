@@ -14,7 +14,7 @@ import * as serviceWorker from './serviceWorker'
 
 const history = createBrowserHistory()
 
-const store = createStore(createRootReducer(history), createMiddleware(history))
+export const store = createStore(createRootReducer(history), createMiddleware(history))
 
 ReactDOM.render(
    <Provider store={store}>
