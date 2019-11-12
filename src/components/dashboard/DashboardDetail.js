@@ -17,6 +17,8 @@ import AuthorizedGreyImage from '../../images/icon-authorized-grey.svg'
 
 import DashboardKeys from './DashboardKeys'
 
+import autobahn from 'autobahn'
+
 class DashboardDetail extends Component {
    state = {
       loader: false,
